@@ -24,3 +24,5 @@ const dogs = [
     "profilePicture": "someURL"
   },
 ]
+
+module.exports = dogs

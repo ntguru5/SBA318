@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const upload = require('../multer');
-const dogs = require('../data/dogs');
+const dogs = require('../data/dogs.js');
 
 // GET routes
 router.get('/', (req, res) => {
