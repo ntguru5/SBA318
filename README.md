@@ -35,5 +35,3 @@ A simple web page for managing pet profiles.
 * `POST /pets`: Create new pet profile
 * `DELETE /pets/:id`: Delete individual pet profile
 
-## Folders
-![folders](./SBA318-folders.png)
