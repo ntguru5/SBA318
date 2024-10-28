@@ -36,18 +36,4 @@ A simple web page for managing pet profiles.
 * `DELETE /pets/:id`: Delete individual pet profile
 
 ## Folders
-  SBA318-pet-profile-app/
-  ├── data/
-  │   └── dogs.js            # file to store dog data
-  ├── public/
-  │   ├── uploads/           # Profile picture uploads go here
-  │   └──styles.css         # styling
-  ├── routes/
-  │   └── pets.js       # Route definitions for dog operations
-  ├── views/
-  │   ├── petProfile.ejs     # Profile page for a single dog
-  │   └── pets.ejs           # List of all dog profiles, add pet
-  ├── index.js              # Main application file
-  ├── multer.js              # Middleware for file upload
-  ├── package.json           # Project dependencies
-  └── README.md
+![folders](./SBA318-folders.png)
