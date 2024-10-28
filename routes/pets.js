@@ -30,9 +30,12 @@ router.post('/', upload.single('profilePicture'), (req, res) => {
 router.patch('/:id', (req, res) => {
   const petId = req.params.id;
   const updatedPet = req.body;
-  const petIndex = dogs.findIndex((pet) => pet.id === parseInt(petId));
-  if (petIndex !== -1) {
-    dogs[petIndex] = updatedPet;
+  // const petIndex = dogs.findIndex((pet) => pet.id === parseInt(petId));
+  // if (petIndex !== -1) {
+  //   dogs[petIndex] = updatedPet;
+  const pet = dogs.find((pet) => pet.id === parseInt(petId));
+  if (pet) {
+    Object.assign(pet, updatedPet);
     res.redirect('/pets');
   } else {
     res.status(404).send('Pet not found');

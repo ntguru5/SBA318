@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
-// const upload = require('./multer');
+const methodOverride = require('method-override');
 const petsRouter = require('./routes/pets.js');
 
 PORT = 3000;
@@ -12,6 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('views', './views');
 app.use(express.static('public'));
+app.use(methodOverride('_method'));
 
 app.use('/pets', petsRouter);
 
