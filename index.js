@@ -16,9 +16,9 @@ app.use(express.static('public'));
 
 app.use('/pets', petsRouter);
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
 
 app.listen(3000, () => {
   console.log(`Server started on http://localhost:${PORT}`);
