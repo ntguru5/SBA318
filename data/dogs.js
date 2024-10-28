@@ -5,7 +5,7 @@ const dogs = [
     "breed": "Chihuahua",
     "sex": "male",
     "age": 16,
-    "profilePicture": "https://ibb.co/FBt99Lz"
+    "profilePicture": "2.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@ const dogs = [
     "breed": "Poodle",
     "sex": "female",
     "age": 5,
-    "profilePicture": "someURL"
+    "profilePicture": "dog.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@ const dogs = [
     "breed": "German Shepherd",
     "sex": "male",
     "age": 1,
-    "profilePicture": "someURL"
+    "profilePicture": "dog.png"
   },
 ]
 

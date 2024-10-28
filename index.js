@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
-const upload = require('./multer');
+// const upload = require('./multer');
 const petsRouter = require('./routes/pets.js');
-
 
 PORT = 3000;
 
