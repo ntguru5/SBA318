@@ -36,4 +36,4 @@ A simple web page for managing pet profiles.
 * `DELETE /pets/:id`: Delete individual pet profile
 
 ## Folders
-![folders](./PH_Signup.png)
+![folders](./SBA318-folders.png)
