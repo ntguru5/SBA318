@@ -9,8 +9,9 @@
     <p>Breed: <%= pet.breed %></p>
     <p>Age: <%= pet.age %></p>
     <img src="/uploads/<%= pet.profilePicture %>" alt="Profile Picture">
-    <form action="/pets/<%= pet.id %>" method="post">
-      <input type="hidden" name="_method" value="patch">
+    <form action="/pets/<%= pet.id %>?_method=PATCH" method="POST">
+    <!-- <form action="/pets/<%= pet.id %>" method="patch" method="post"> -->
+      <!-- <input type="hidden" name="_method" value="patch"> -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" value="<%= pet.name %>"><br><br>
       <label for="breed">Breed:</label>

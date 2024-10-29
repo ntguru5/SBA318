@@ -6,6 +6,7 @@ const dogs = require('../data/dogs.js');
 // GET routes
 router.get('/', (req, res) => {
   res.render('pets', { pets: dogs });
+  // res.send(dogs)
 });
 
 router.get('/:id', (req, res) => {
