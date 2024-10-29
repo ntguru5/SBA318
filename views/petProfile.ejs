@@ -22,5 +22,9 @@
       <input type="number" id="age" name="age" value="<%= pet.age %>"><br><br>
       <input type="submit" value="Update Pet">
     </form>
+    <form action="/pets/<%= pet.id %>?_method=DELETE" method="POST">
+      <!-- <input type="hidden" name="_method" value="delete"> -->
+      <input type="submit" value="Delete Pet">
+    </form>
   </body>
 </html>
